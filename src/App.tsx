@@ -3,7 +3,7 @@ import SearchPage from "./pages/SearchPage";
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/anime-search-app">
       <Routes>
         <Route path="/" element={<SearchPage />} />
       </Routes>
