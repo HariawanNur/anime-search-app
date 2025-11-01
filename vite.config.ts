@@ -1,12 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// ✅ jalankan di port 4000 tanpa .env
+// ✅ Base path harus sesuai nama repo untuk GitHub Pages
 export default defineConfig({
   plugins: [react()],
+  base: '/anime-search-app/', // tambahkan ini
   server: {
     port: 4000,
   },
-  // ✨ Tambahkan ini supaya GitHub Pages tahu base path repo
-  base: '/anime-search-app/',
-})
+});
