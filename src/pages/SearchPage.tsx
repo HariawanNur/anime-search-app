@@ -7,7 +7,7 @@ import { fetchAnimeList } from "../redux/animeSlice";
 
 const SearchPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { list, loading, error, pagination } = useSelector(
+  const { list, loading, error } = useSelector(
     (s: RootState) => s.anime
   );
   const [query, setQuery] = useState("");

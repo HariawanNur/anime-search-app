@@ -4,6 +4,7 @@ interface SearchBarProps {
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
+  className?: string;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ value, onChange, placeholder }) => {
