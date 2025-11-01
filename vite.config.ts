@@ -7,4 +7,6 @@ export default defineConfig({
   server: {
     port: 4000,
   },
+  // ✨ Tambahkan ini supaya GitHub Pages tahu base path repo
+  base: '/anime-search-app/',
 })
